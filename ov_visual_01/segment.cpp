@@ -4,8 +4,8 @@
 void find_contours(Mat ostuImage) {
 
 	Mat dstImage = Mat::zeros(ostuImage.rows, ostuImage.cols, CV_8UC3);
-	vector<vector<Point> > contours;
-	vector<Vec4i> hierarchy;
+	std::vector<std::vector<Point> > contours;
+	std::vector<Vec4i> hierarchy;
 	findContours(ostuImage, contours, hierarchy,
 		CV_RETR_CCOMP, CV_CHAIN_APPROX_SIMPLE);
 	int index = 0;

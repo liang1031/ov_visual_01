@@ -6,7 +6,6 @@
 #include "opencv2/imgproc/imgproc.hpp"
 #include "opencv2/highgui/highgui.hpp"
 using namespace cv;
-using namespace std;
 
 void find_contours(Mat ostuImage);
 void ostu(Mat srcImage);
